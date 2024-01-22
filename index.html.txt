@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Landing Page de Relatórios</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Cadastro de Relatórios</h1>
+        </header>
+
+        <section id="reportForm">
+            <form action="#" method="post">
+                <label for="reportTitle">Título do Relatório:</label>
+                <input type="text" id="reportTitle" name="reportTitle" required>
+
+                <label for="reportData">Dados do Relatório:</label>
+                <textarea id="reportData" name="reportData" rows="4" required></textarea>
+
+                <button type="submit">Enviar Relatório</button>
+            </form>
+        </section>
+
+        <section id="reportDisplay">
+            <h2>Relatórios Cadastrados</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Dados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aqui você pode adicionar dinamicamente os relatórios cadastrados -->
+                    <tr>
+                        <td>Exemplo 1</td>
+                        <td>Lorem ipsum dolor sit amet...</td>
+                    </tr>
+                    <tr>
+                        <td>Exemplo 2</td>
+                        <td>Consectetur adipiscing elit...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="chart">
+            <!-- Aqui você pode adicionar um gráfico, por exemplo, usando bibliotecas como Chart.js -->
+            <canvas id="myChart" width="400" height="200"></canvas>
+        </section>
+    </div>
+</body>
+</html>
